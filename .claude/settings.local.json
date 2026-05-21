@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm install *)",
+      "Bash(Get-ChildItem -Path \"c:\\\\Epam\\\\KRCI\\\\java\\\\forks\\\\javascript-pnpm-angular\" -MaxDepth 1 -Name)",
+      "Bash(Select-String -Pattern \"\\(karma|jest\\)\" -ErrorAction SilentlyContinue)",
+      "PowerShell(Get-ChildItem -Path \"c:\\\\Epam\\\\KRCI\\\\java\\\\forks\\\\javascript-pnpm-angular\" -MaxDepth 1 | Where-Object { $_.Name -match '\\(karma|jest\\)' })",
+      "PowerShell(Get-ChildItem -Path \"c:\\\\Epam\\\\KRCI\\\\java\\\\forks\\\\javascript-pnpm-angular\" -Depth 1 | Where-Object { $_.Name -match '\\(karma|jest\\)' })",
+      "WebFetch(domain:registry.npmjs.org)"
+    ]
+  }
+}
